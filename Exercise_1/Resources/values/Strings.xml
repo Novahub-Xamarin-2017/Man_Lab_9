@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Exercise_1</string>
+  <string name="btnBack">Back</string>
+  <string name="txtSignUp">SIGN UP</string>
+  <string name="btnSignUp">SIGN UP</string>
+  <string name="txtConnectFacebook">CONNECT WITH FACEBOOK</string>
+</resources>
