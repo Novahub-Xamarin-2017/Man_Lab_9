@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">QUADRATIC EQUATION</string>
+  <string name="strAppName">PHƯƠNG TRÌNH BẬC HAI</string>
+  <string name="strFirstCofficient">Hệ số bậc hai:</string>
+  <string name="strSecondCofficient">Hệ số bậc nhất:</string>
+  <string name="strThirdCofficient">Hệ số tự do:</string>
+  <string name="btnSolveName">Giải</string>
+  <string name="btnResetName">Tạo lại</string>
+  <string name="txtResult">KẾT QUẢ</string>
+</resources>
