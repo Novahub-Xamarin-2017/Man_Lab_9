@@ -15,7 +15,7 @@ namespace Exercise_3
         [InjectView(Resource.Id.tvResultTitle)] private TextView tvResultTitle;
         [InjectView(Resource.Id.tvResult)] private TextView tvResult;
         [InjectOnClick(Resource.Id.btnSolve)]
-        void Solve(object sender, EventArgs e)
+        private void Solve(object sender, EventArgs e)
         {
             tvResultTitle.Visibility = ViewStates.Invisible;
             tvResult.Text = "";
@@ -78,7 +78,7 @@ namespace Exercise_3
         }
 
         [InjectOnClick(Resource.Id.btnReset)]
-        void Reset(object sender, EventArgs e)
+        private void Reset(object sender, EventArgs e)
         {
             edFirstCofficient.Text = "";
             edSecondCofficient.Text = "";
