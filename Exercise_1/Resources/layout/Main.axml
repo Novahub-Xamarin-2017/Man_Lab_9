@@ -16,7 +16,7 @@
             android:background="@null"
             android:textColor="@color/pink"
             android:drawableLeft="@drawable/back_icon"
-            android:drawableTint="#ffff69b4" />
+            android:drawableTint="@color/pink" />
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="wrap_content"
@@ -45,14 +45,12 @@
         android:paddingBottom="@dimen/paddingSmall"
         android:background="@color/Gainsboro"
         android:textColor="@color/CornflowerBlue"
-        android:textSize="20sp"
+        android:textSize="@dimen/textSizeMedium"
         android:drawableLeft="@drawable/fb"
         android:paddingLeft="@dimen/paddingSmall"
-        android:drawableTint="#ff6495ed" />
+        android:drawableTint="@color/CornflowerBlue" />
     <LinearLayout
         android:orientation="vertical"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout1"
@@ -61,84 +59,68 @@
         android:background="@android:color/background_light">
         <LinearLayout
             android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:id="@+id/linearLayout3"
             android:layout_weight="1"
             android:weightSum="2"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="@dimen/marginMedium">
             <EditText
-                android:minWidth="25px"
-                android:minHeight="25px"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:hint="First Name"
+                android:hint="@string/txtFirstNameHint"
                 android:layout_weight="1"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray" />
             <EditText
-                android:minWidth="25px"
-                android:minHeight="25px"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:hint="Last Name"
+                android:hint="@string/txtLastNameHint"
                 android:layout_weight="1"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/darker_gray" />
         </LinearLayout>
         <EditText
-            android:minWidth="25px"
-            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:hint="Email Address"
+            android:hint="@string/txtEmailHint"
             android:layout_weight="1"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="@dimen/marginMedium" />
         <EditText
-            android:minWidth="25px"
-            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:hint="Username"
+            android:hint="@string/txtUsernameHint"
             android:layout_weight="1"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="@dimen/marginMedium" />
         <EditText
-            android:minWidth="25px"
-            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:hint="Password"
+            android:hint="@string/txtPasswordHint"
             android:layout_weight="1"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="@dimen/marginMedium" />
         <EditText
-            android:minWidth="25px"
-            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:hint="Confirm Password"
+            android:hint="@string/txtConfirmPasswordHint"
             android:layout_weight="1"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="@dimen/marginMedium" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2"
         android:background="@color/Gainsboro">
         <TextView
-            android:text="I agree to the "
+            android:text="@string/txtAgree"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -147,20 +129,21 @@
             android:paddingTop="@dimen/paddingSmall"
             android:paddingLeft="@dimen/paddingSmall"
             android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:textSize="@dimen/textSizeSmall"
+            android:paddingRight="@dimen/textviewPadding" />
         <Button
-            android:text="Terms of Service"
+            android:text="@string/btnTermsOfService"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/button3"
             android:background="@null"
-            android:textSize="15sp"
+            android:textSize="@dimen/textSizeSmall"
             android:textColor="@color/pink" />
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/switch1"
             android:layout_gravity="right"
-            android:width="80dp" />
+            android:layout_marginLeft="@dimen/marginLarge" />
     </LinearLayout>
 </LinearLayout>

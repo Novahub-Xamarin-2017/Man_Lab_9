@@ -1,4 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <dimen name="paddingSmall">20dp</dimen>
+  <dimen name="textviewPadding">5dp</dimen>
+  <dimen name="textSizeSmall">15sp</dimen>
+  <dimen name="textSizeMedium">20sp</dimen>
+  <dimen name="marginSmall">10dp</dimen>
+  <dimen name="marginMedium">20dp</dimen>
+  <dimen name="marginLarge">25dp</dimen>
+  
 </resources>
