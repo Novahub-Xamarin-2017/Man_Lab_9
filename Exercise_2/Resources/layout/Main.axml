@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView1" />
+    android:layout_height="match_parent"
+    android:background="@color/SlateBlue">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -14,31 +10,73 @@
         android:id="@+id/linearLayout1"
         android:layout_marginLeft="@dimen/viewgroupMarginSmall"
         android:layout_marginRight="@dimen/viewgroupMarginSmall"
-        android:layout_below="@id/imageView1">
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="@dimen/viewgroupMarginSmall"
+        android:layout_marginBottom="@dimen/viewgroupMarginSmall">
+        <TextView
+            android:text="@string/strLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:textSize="@dimen/textLogoSize"
+            android:layout_marginTop="@dimen/viewgroupMarginSmall"
+            android:textColor="@color/white" />
+        <TextView
+            android:text="@string/txtUnderLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:textSize="@dimen/textUnderLogoSize"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginLeft="@dimen/viewgroupMarginSmall"
+        android:layout_marginRight="@dimen/viewgroupMarginSmall"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="@dimen/viewgroupMarginSmall">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txtUsernameHint" />
+            android:hint="@string/txtUsernameHint"
+            android:drawableLeft="@drawable/icons8_account_24"
+            android:drawableTint="#ffb4b4b4"
+            android:textColorHint="@color/white" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txtPasswordHint" />
+            android:hint="@string/txtPasswordHint"
+            android:drawableLeft="@drawable/icons8_password_24"
+            android:drawableTint="#ffb4b4b4"
+            android:textColorHint="@color/white" />
         <Button
             android:text="@string/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button1" />
+            android:id="@+id/button1"
+            android:layout_marginTop="@dimen/viewMarginSmall"
+            android:background="@color/DarkOrange"
+            android:textColor="@color/white" />
         <TextView
             android:text="@string/txtOr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_marginTop="@dimen/viewPaddingSmall"
+            android:layout_marginBottom="@dimen/viewPaddingSmall" />
         <Button
             android:text="@string/btnSignInWithFacebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button2" />
+            android:id="@+id/button2"
+            android:background="@color/Navy"
+            android:textColor="@color/white" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -47,7 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="@dimen/viewgroupMarginSmall"
-        android:layout_marginRight="@dimen/viewgroupMarginSmall">
+        android:layout_marginRight="@dimen/viewgroupMarginSmall"
+        android:layout_marginBottom="@dimen/viewPaddingSmall">
         <TextView
             android:text="@string/txtNoAccount"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -56,7 +95,8 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textSize="@dimen/textSizeSmall"
-            android:paddingLeft="@dimen/textViewPaddingSmall" />
+            android:paddingLeft="@dimen/textViewPaddingSmall"
+            android:textColor="@color/white" />
         <Button
             android:text="@string/btnSignUp"
             android:layout_width="wrap_content"
@@ -67,6 +107,7 @@
             android:textSize="@dimen/textSizeSmall"
             android:textStyle="normal"
             android:paddingRight="@dimen/viewPaddingSmall"
-            android:paddingLeft="@dimen/viewPaddingSmall" />
+            android:paddingLeft="@dimen/viewPaddingSmall"
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>

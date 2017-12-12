@@ -7,5 +7,7 @@
   <string name="btnSignInWithFacebook">SIGN IN WITH FACEBOOK</string>
   <string name="txtOr">or</string>
   <string name="txtNoAccount">Don't have an account yet?</string>
+  <string name="strLogo">MOVIENS</string>
   <string name="btnSignUp">SIGN UP.</string>
+  <string name="txtUnderLogo">INTERACT WITH YOUR DEMONS</string>
 </resources>
