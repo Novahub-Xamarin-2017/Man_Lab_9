@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Exercise_2</string>
+  <string name="txtUsernameHint">Username</string>
+  <string name="txtPasswordHint">Password</string>
+  <string name="btnSignIn">SIGN IN</string>
+  <string name="btnSignInWithFacebook">SIGN IN WITH FACEBOOK</string>
+  <string name="txtOr">or</string>
+  <string name="txtNoAccount">Don't have an account yet?</string>
+  <string name="strLogo">MOVIENS</string>
+  <string name="btnSignUp">SIGN UP.</string>
+  <string name="txtUnderLogo">INTERACT WITH YOUR DEMONS</string>
+</resources>
