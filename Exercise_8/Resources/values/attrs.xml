@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <declare-styleable name="SetProgressProperties">
+    <attr name="value" format="integer" />
+    <attr name="strokeWeight" format="integer" />
+    <attr name="highlightColor" format="color" />
+    <attr name="normalColor" format="color" />
+  </declare-styleable>
+</resources>
