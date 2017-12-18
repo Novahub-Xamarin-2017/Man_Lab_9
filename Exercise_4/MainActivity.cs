@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using System;
 
 namespace Exercise_4
 {
@@ -15,5 +16,7 @@ namespace Exercise_4
             SetContentView(Resource.Layout.Main);
         }
     }
+    
+
 }
 
