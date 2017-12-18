@@ -17,5 +17,9 @@
   <string name="btnDiv">/</string>
   <string name="btnMul">*</string>
   <string name="btnSolve">=</string>
+  <string name="btnC">C</string>
+  <string name="btnAC">CE</string>
+  <string name="btnChangeStatus">-</string>
+  <string name="btnDel">Del</string>
   
 </resources>
