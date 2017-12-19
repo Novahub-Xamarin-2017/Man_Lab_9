@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Exercise_1</string>
+  <string name="btnBack">Back</string>
+  <string name="txtSignUp">SIGN UP</string>
+  <string name="btnSignUp">SIGN UP</string>
+  <string name="txtConnectFacebook">CONNECT WITH FACEBOOK</string>
+  <string name="txtFirstNameHint">First Name</string>
+  <string name="txtLastNameHint">Last Name</string>
+  <string name="txtEmailHint">Email Address</string>
+  <string name="txtUsernameHint">Username</string>
+  <string name="txtPasswordHint">Password</string>
+  <string name="txtConfirmPasswordHint">Confirm Password</string>
+  <string name="txtAgree">I AGREE TO THE</string>
+  <string name="btnTermsOfService"> TERMS OF SERVICE</string>
+</resources>
