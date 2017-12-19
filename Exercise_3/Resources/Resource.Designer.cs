@@ -144,6 +144,18 @@ namespace Exercise_3
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f050008
+			public const int InfiniteSolution = 2131034120;
+			
+			// aapt resource value: 0x7f05000a
+			public const int InputData = 2131034122;
+			
+			// aapt resource value: 0x7f05000b
+			public const int InputFloat = 2131034123;
+			
+			// aapt resource value: 0x7f050009
+			public const int NoSolution = 2131034121;
+			
 			// aapt resource value: 0x7f050000
 			public const int app_name = 2131034112;
 			

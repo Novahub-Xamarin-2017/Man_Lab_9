@@ -8,4 +8,9 @@
   <string name="btnSolveName">Giải</string>
   <string name="btnResetName">Tạo lại</string>
   <string name="txtResult">KẾT QUẢ</string>
+
+  <string name="InfiniteSolution">Phương trình có vô số nghiệm.</string>
+  <string name="NoSolution">Phương trình đã cho vô nghiệm.</string>
+  <string name="InputData">Vui lòng nhập đầy đủ dữ liệu!</string>
+  <string name="InputFloat">Vui lòng nhập đúng định dạng dữ liệu.</string>
 </resources>

@@ -23,7 +23,7 @@ namespace Exercise_3
                 edSecondCofficient.Text.Equals("") ||
                 edThirdCofficient.Text.Equals(""))
             {
-                Toast.MakeText(this, "Vui lòng nhập đầy đủ dữ liệu!", ToastLength.Short).Show();
+                Toast.MakeText(this, GetString(Resource.String.InputData), ToastLength.Short).Show();
             }
             else
             {
@@ -33,48 +33,29 @@ namespace Exercise_3
                     var b = Convert.ToDouble(edSecondCofficient.Text);
                     var c = Convert.ToDouble(edThirdCofficient.Text);
                     tvResultTitle.Visibility = ViewStates.Visible;
-                    if (a == 0)
-                    {
-                        if (b == 0)
-                        {
-                            if (c == 0)
-                            {
-                                tvResult.Text = "Phương trình có vô số nghiệm.";
-                            }
-                            else
-                            {
-                                tvResult.Text = "Phương trình đã cho vô nghiệm.";
-                            }
-                        }
-                        else
-                        {
-                            tvResult.Text = $"Phương trình đã cho có một nghiệm:\n\t\tx = {-c / b}";
-                        }
-                    }
-                    else
-                    {
-                        var delta = b * b - 4 * a * c;
-                        if (delta < 0)
-                        {
-                            tvResult.Text = "Phương trình đã cho vô nghiệm.";
-                        }
-                        else if (delta == 0)
-                        {
-                            tvResult.Text = $"Phương trình đã cho có nghiệm kép:\n\t\tx1 = x2 = {-b / (2 * a)}";
-                        }
-                        else
-                        {
-                            var x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                            var x2 = (-b - Math.Sqrt(delta)) / (2 * a);
-                            tvResult.Text = $"Phương trình đã cho có hai nghiệm:\n\t\tx1 = {x1}\n\t\tx2 = {x2}";
-                        }
-                    }   
+                    tvResult.Text = SolveEquation(a, b, c);
                 }
                 catch (Exception)
                 {
-                    Toast.MakeText(this, "Vui lòng nhập đúng định dạng dữ liệu.", ToastLength.Short).Show();
+                    Toast.MakeText(this, GetString(Resource.String.InputFloat), ToastLength.Short).Show();
                 }
             }
+        }
+
+        private string SolveEquation(double a, double b, double c)
+        {
+            if (a.Equals(0))
+            {
+                return b.Equals(0)
+                    ? (c.Equals(0)
+                        ? GetString(Resource.String.InfiniteSolution)
+                        : GetString(Resource.String.NoSolution))
+                    : $"Phương trình đã cho có một nghiệm:\n\t\tx = {-c / b}";
+            }
+            var delta = b * b - 4 * a * c;
+            return delta < 0 ? GetString(Resource.String.NoSolution) : (delta > 0
+                ? $"Phương trình đã cho có hai nghiệm:\n\t\tx1 = {(-b + Math.Sqrt(delta)) / (2 * a)}\n\t\tx2 = {(-b - Math.Sqrt(delta)) / (2 * a)}"
+                : $"Phương trình đã cho có nghiệm kép:\n\t\tx1 = x2 = {-b / (2 * a)}");
         }
 
         [InjectOnClick(Resource.Id.btnReset)]
