@@ -19,11 +19,11 @@ namespace Exercise_3
         {
             tvResultTitle.Visibility = ViewStates.Invisible;
             tvResult.Text = "";
-            if (edFirstCofficient.Text.Equals("") ||
-                edSecondCofficient.Text.Equals("") ||
-                edThirdCofficient.Text.Equals(""))
+            if (String.IsNullOrEmpty(edFirstCofficient.Text) ||
+                String.IsNullOrEmpty(edSecondCofficient.Text) ||
+                String.IsNullOrEmpty(edThirdCofficient.Text))
             {
-                Toast.MakeText(this, GetString(Resource.String.InputData), ToastLength.Short).Show();
+                Toast.MakeText(this, Resource.String.InputData, ToastLength.Short).Show();
             }
             else
             {
@@ -37,7 +37,7 @@ namespace Exercise_3
                 }
                 catch (Exception)
                 {
-                    Toast.MakeText(this, GetString(Resource.String.InputFloat), ToastLength.Short).Show();
+                    Toast.MakeText(this, Resource.String.InputFloat, ToastLength.Short).Show();
                 }
             }
         }
@@ -50,12 +50,12 @@ namespace Exercise_3
                     ? (c.Equals(0)
                         ? GetString(Resource.String.InfiniteSolution)
                         : GetString(Resource.String.NoSolution))
-                    : $"Phương trình đã cho có một nghiệm:\n\t\tx = {-c / b}";
+                    : GetString(Resource.String.OneRoot) + $"\n\t\tx = {-c / b}";
             }
             var delta = b * b - 4 * a * c;
             return delta < 0 ? GetString(Resource.String.NoSolution) : (delta > 0
-                ? $"Phương trình đã cho có hai nghiệm:\n\t\tx1 = {(-b + Math.Sqrt(delta)) / (2 * a)}\n\t\tx2 = {(-b - Math.Sqrt(delta)) / (2 * a)}"
-                : $"Phương trình đã cho có nghiệm kép:\n\t\tx1 = x2 = {-b / (2 * a)}");
+                ? GetString(Resource.String.TwoRoots) + $"\n\t\tx1 = {(-b + Math.Sqrt(delta)) / (2 * a)}\n\t\tx2 = {(-b - Math.Sqrt(delta)) / (2 * a)}"
+                : GetString(Resource.String.DupRoot) + $"\n\t\tx1 = x2 = {-b / (2 * a)}");
         }
 
         [InjectOnClick(Resource.Id.btnReset)]

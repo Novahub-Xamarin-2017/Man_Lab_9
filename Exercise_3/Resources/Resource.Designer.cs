@@ -144,6 +144,9 @@ namespace Exercise_3
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f05000e
+			public const int DupRoot = 2131034126;
+			
 			// aapt resource value: 0x7f050008
 			public const int InfiniteSolution = 2131034120;
 			
@@ -155,6 +158,12 @@ namespace Exercise_3
 			
 			// aapt resource value: 0x7f050009
 			public const int NoSolution = 2131034121;
+			
+			// aapt resource value: 0x7f05000c
+			public const int OneRoot = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int TwoRoots = 2131034125;
 			
 			// aapt resource value: 0x7f050000
 			public const int app_name = 2131034112;

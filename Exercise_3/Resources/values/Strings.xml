@@ -13,4 +13,7 @@
   <string name="NoSolution">Phương trình đã cho vô nghiệm.</string>
   <string name="InputData">Vui lòng nhập đầy đủ dữ liệu!</string>
   <string name="InputFloat">Vui lòng nhập đúng định dạng dữ liệu.</string>
+  <string name="OneRoot">Phương trình đã cho có một nghiệm:</string>
+  <string name="TwoRoots">Phương trình đã cho có hai nghiệm:</string>
+  <string name="DupRoot">Phương trình đã cho có nghiệm kép:</string>
 </resources>
