@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Application</string>
+  <string name="header">Personal info</string>
+  <string name="FirstName">First name</string>
+  <string name="Connors">Connors</string>
+  <string name="Date">01/01/90</string>
+  <string name="SocialSecurity">Social Security</string>
+  <string name="ResidenceAddress">Residence address</string>
+  <string name="Address">2000 Main Street, Apartment J</string>
+  <string name="city">San Francisco</string>
+  <string name="ZipCode">94112</string>
+  <string-array name="firstArray">
+    <item>CA</item>
+  </string-array>
+  <string-array name="secondArray">
+    <item>United States</item>
+  </string-array>
+
+</resources>
