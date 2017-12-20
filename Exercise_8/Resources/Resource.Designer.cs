@@ -123,23 +123,23 @@ namespace Exercise_8
 		public partial class Styleable
 		{
 			
-			public static int[] SetProgressProperties = new int[] {
+			public static int[] progress = new int[] {
 					2130771968,
 					2130771969,
 					2130771970,
 					2130771971};
 			
 			// aapt resource value: 2
-			public const int SetProgressProperties_highlightColor = 2;
+			public const int progress_highlightColor = 2;
 			
 			// aapt resource value: 3
-			public const int SetProgressProperties_normalColor = 3;
+			public const int progress_normalColor = 3;
 			
 			// aapt resource value: 1
-			public const int SetProgressProperties_strokeWeight = 1;
+			public const int progress_strokeWeight = 1;
 			
 			// aapt resource value: 0
-			public const int SetProgressProperties_value = 0;
+			public const int progress_value = 0;
 			
 			static Styleable()
 			{
