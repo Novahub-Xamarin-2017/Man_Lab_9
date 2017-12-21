@@ -72,17 +72,17 @@ namespace Exercise_4
 			// aapt resource value: 0x7f050015
 			public const int btnAdd = 2131034133;
 			
-			// aapt resource value: 0x7f050008
-			public const int btnC = 2131034120;
+			// aapt resource value: 0x7f050005
+			public const int btnC = 2131034117;
 			
-			// aapt resource value: 0x7f050009
-			public const int btnCE = 2131034121;
+			// aapt resource value: 0x7f050006
+			public const int btnCE = 2131034118;
 			
 			// aapt resource value: 0x7f050011
 			public const int btnChangeStatus = 2131034129;
 			
-			// aapt resource value: 0x7f05000a
-			public const int btnDel = 2131034122;
+			// aapt resource value: 0x7f050007
+			public const int btnDel = 2131034119;
 			
 			// aapt resource value: 0x7f050018
 			public const int btnDiv = 2131034136;
@@ -90,8 +90,8 @@ namespace Exercise_4
 			// aapt resource value: 0x7f050013
 			public const int btnDot = 2131034131;
 			
-			// aapt resource value: 0x7f050006
-			public const int btnEight = 2131034118;
+			// aapt resource value: 0x7f050009
+			public const int btnEight = 2131034121;
 			
 			// aapt resource value: 0x7f05000c
 			public const int btnFive = 2131034124;
@@ -102,14 +102,14 @@ namespace Exercise_4
 			// aapt resource value: 0x7f050017
 			public const int btnMul = 2131034135;
 			
-			// aapt resource value: 0x7f050005
-			public const int btnNine = 2131034117;
+			// aapt resource value: 0x7f05000a
+			public const int btnNine = 2131034122;
 			
 			// aapt resource value: 0x7f05000e
 			public const int btnOne = 2131034126;
 			
-			// aapt resource value: 0x7f050007
-			public const int btnSeven = 2131034119;
+			// aapt resource value: 0x7f050008
+			public const int btnSeven = 2131034120;
 			
 			// aapt resource value: 0x7f05000d
 			public const int btnSix = 2131034125;
