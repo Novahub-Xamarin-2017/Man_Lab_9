@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Exercise_67</string>
+  <string name="strLogin">Login</string>
+  <string name="txtNameHint">Name</string>
+  <string name="txtPasswordHint">Password</string>
+  <string name="forgotPassword">Forgot Password?</string>
+  <string name="noAccount">No Account?</string>
+  <string name="strRegister">Register</string>
+  <string name="txtPhoneNumberHint">Phone Number</string>
+  <string name="txtRefereCodeHint">Refere Code</string>
+  <string name="alreadyAccount">Already Account?</string>
+</resources>
