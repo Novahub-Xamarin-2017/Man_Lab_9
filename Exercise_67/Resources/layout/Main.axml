@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_margin="@dimen/layout_margin">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="#ffb4b4b4"
+            android:hint="@string/txtNameHint"
+            android:drawableLeft="@drawable/user"
+            android:layout_margin="@dimen/layout_margin"
+            android:drawablePadding="@dimen/layout_margin" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:drawableLeft="@drawable/password"
+            android:drawableRight="@drawable/eye"
+            android:drawableTint="#ffb4b4b4"
+            android:hint="@string/txtPasswordHint"
+            android:layout_margin="@dimen/layout_margin"
+            android:drawablePadding="@dimen/layout_margin" />
+        <Button
+            android:text="@string/strLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_marginLeft="@dimen/view_margin_large"
+            android:layout_marginRight="@dimen/view_margin_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColor="@color/white"
+            android:background="@color/red" />
+        <Button
+            android:text="@string/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/view_margin_large"
+            android:layout_marginLeft="@dimen/view_margin_large"
+            android:background="@null"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_small" />
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <TextView
+                android:text="@string/noAccount"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_centerInParent="true"
+                android:background="#000"
+                android:layout_toLeftOf="@id/textView2" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_centerInParent="true"
+                android:background="#000"
+                android:layout_toRightOf="@id/textView2" />
+        </RelativeLayout>
+        <Button
+            android:text="@string/strRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:layout_marginLeft="@dimen/view_margin_large"
+            android:layout_marginRight="@dimen/view_margin_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColor="@color/black"
+            android:background="@color/gray"
+            android:backgroundTint="#00000000"
+            android:backgroundTintMode="add" />
+    </LinearLayout>
+</LinearLayout>
