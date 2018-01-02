@@ -5,5 +5,6 @@
     android:layout_height="match_parent">
     <Exercise_CustomClock.MyCustomControls.MyAnalogClock
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:id="@+id/myClock" />
 </LinearLayout>
