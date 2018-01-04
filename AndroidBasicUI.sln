@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSeekbar", "CustomSeekbar\CustomSeekbar.csproj", "{F38CEEF8-CE22-4A29-B86D-525DD0059901}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_CustomClock", "Exercise_CustomClock\Exercise_CustomClock.csproj", "{84864340-08CA-445A-A3D9-B16B5BD4CB3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_10", "Exercise_10\Exercise_10.csproj", "{8EE319E4-1D19-4AF5-B179-869154FC68C4}"
@@ -27,6 +29,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38CEEF8-CE22-4A29-B86D-525DD0059901}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{84864340-08CA-445A-A3D9-B16B5BD4CB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84864340-08CA-445A-A3D9-B16B5BD4CB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84864340-08CA-445A-A3D9-B16B5BD4CB3D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

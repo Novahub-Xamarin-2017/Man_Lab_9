@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:weightSum="3"
+        android:layout_margin="@dimen/marginMedium">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_weight="1"
+            android:background="@drawable/add" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtValue"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:text="@string/value"
+                android:gravity="center"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSub"
+            android:layout_weight="1"
+            android:background="@drawable/sub" />
+    </LinearLayout>
+    <Button
+        android:text="@string/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:textSize="@dimen/textSizeMedium" />
+    <TextView
+        android:text="@string/currentValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:textSize="@dimen/textSizeMedium"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mySeekBar"
+        android:layout_margin="@dimen/marginSmall"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/custom_thumb"
+        android:splitTrack="false" />
+</LinearLayout>
